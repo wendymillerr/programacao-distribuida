@@ -11,7 +11,7 @@ public class TemperatureConverterImpl extends UnicastRemoteObject implements Tem
     }
 
     public double fahrenheitToCelsius(double fahrenheit) throws RemoteException{
-        return (fahrenheit + 32) / 1.8;
+        return (fahrenheit - 32) / 1.8;
     }
 
 }
